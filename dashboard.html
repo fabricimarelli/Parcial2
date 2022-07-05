@@ -19,18 +19,20 @@
     </header>
     <section>
        <div class="table_container">
-            <table>
-                <tr>
-                    <th>Usuario</th>
-                    <th>Contraseña</th>
-                    <th>Resultado Ingreso</th>
-                </tr>
-                <tr>
-                    <td>valeria@gmail.com</td>
-                    <td>lppa2022</td>
-                    <td>Exitoso</td>
-                </tr>
+            <table id="usuarios" class="table">
+                <thead>
+                    <tr>
+                        <th>Usuario</th>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Telefono</th>
+                    </tr>
+                </thead>
+                <tbody id="data"></tbody>
             </table>
+        </div>
+        <div class="error-datos-cont">
+            <p id="error-datos" class="ocultar-error">Error al recuperar los datos</p>
         </div>    
     </section>
     <footer>
