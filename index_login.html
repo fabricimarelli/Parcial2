@@ -17,13 +17,13 @@
        <section>
             <div class="form-conteiner">
                                     
-                <form id="frm">
+                <form id="login-form">
 
                     <div class="text-box">
                         <label for="email">Email:</label>
-                        <input type="text" name="email" id="email" placeholder="TuEmail@ejemplo.com">
+                        <input type="text" name="email" id="email" placeholder="TuEmail@ejemplo.com" >
                         <p id="error-email" class="ocultar-error">Ingrese un email valido</p>
-                        <label for="contraseña">Contraseña:</label>
+                        <label for="password">Contraseña:</label>
                         <input type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
                         <p id="error-contraseña" class="ocultar-error">Ingrese una contraseña valida</p>
                                 
@@ -34,6 +34,14 @@
                     </div>
                 </form>
                     
+            </div>
+            <div id="modal-error" class="modal">
+
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="mensaje_parpadea">Error al iniciar sesión</p>
+                </div>
+              
             </div>
             
         </section>
